@@ -1,0 +1,106 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Mar 13 00:03:58 2025
+| Host         : DESKTOP-IJF0GJG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file weddinglight_3_control_sets_placed.rpt
+| Design       : weddinglight_3
+| Device       : xc7a35ti
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   184 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |    26 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |           26 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |           10 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               6 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------------+------------------+------------------+----------------+--------------+
+|      Clock Signal     |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+-----------------------+------------------+------------------+----------------+--------------+
+|  UUT/ff19/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff10/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff1/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff2/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff0/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff21/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff23/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff24/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff20/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff22/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff11/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff8/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff3/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff6/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff4/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff7/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff5/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff14/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff16/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff12/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff13/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff15/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff9/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff17/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff18/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG        |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff25/CLK_BUFG    | load_count[2]_i_1_n_0 | rst_IBUF         |                2 |              6 |         3.00 |
+|  UUT/ff25/CLK_BUFG    |                       | rst_IBUF         |               10 |             32 |         3.20 |
++-----------------------+-----------------------+------------------+------------------+----------------+--------------+
+
+

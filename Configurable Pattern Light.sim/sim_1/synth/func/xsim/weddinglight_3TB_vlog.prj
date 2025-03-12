@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"weddinglight_3TB_func_synth.v" \
+"../../../../../Configurable Pattern Light.srcs/sim_1/new/weddinglight_3TB.v" \
+
+# Do not sort compile order
+nosort

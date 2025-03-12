@@ -1,0 +1,1 @@
+-wto "ed3ff223443749a19776b07fbf1cedcc" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "secureip" --snapshot "weddinglight_3TB_func_synth" "xil_defaultlib.weddinglight_3TB" "xil_defaultlib.glbl" -log "elaborate.log" 

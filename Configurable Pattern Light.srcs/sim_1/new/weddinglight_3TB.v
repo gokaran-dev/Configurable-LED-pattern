@@ -26,14 +26,7 @@ module weddinglight_3TB();
             initial
                 begin
                     #100
-                    load=5'b01111;
-                    #300
-                    load= 5'b00000;
-                    #10
-                    rst=1;
-                    #500
-                    rst=0;
-                   // #10 load=5'b10101;
+                    load=5'b11011;
                     #1000
                     #100 $finish;
                  end
