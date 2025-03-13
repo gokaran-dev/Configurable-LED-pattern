@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Mar 13 00:04:14 2025
+| Date             : Thu Mar 13 16:33:49 2025
 | Host             : DESKTOP-IJF0GJG running 64-bit major release  (build 9200)
 | Command          : report_power -file weddinglight_3_power_routed.rpt -pb weddinglight_3_power_summary_routed.pb -rpx weddinglight_3_power_routed.rpx
 | Design           : weddinglight_3
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 13.832       |
+| Total On-Chip Power (W)  | 0.103        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 13.676       |
-| Device Static (W)        | 0.156        |
+| Dynamic (W)              | 0.041        |
+| Device Static (W)        | 0.062        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 30.8         |
-| Junction Temperature (C) | 94.2         |
+| Max Ambient (C)          | 99.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,15 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.339 |      154 |       --- |             --- |
-|   LUT as Logic |     0.245 |       33 |     20800 |            0.16 |
-|   Register     |     0.083 |       64 |     41600 |            0.15 |
-|   BUFG         |     0.010 |        2 |        32 |            6.25 |
+| Clocks         |    <0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      153 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       33 |     20800 |            0.16 |
+|   Register     |    <0.001 |       64 |     41600 |            0.15 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       53 |       --- |             --- |
-| Signals        |     0.551 |       76 |       --- |             --- |
-| I/O            |    12.786 |       23 |       106 |           21.70 |
-| Static Power   |     0.156 |          |           |                 |
-| Total          |    13.832 |          |           |                 |
+| Signals        |    <0.001 |       74 |       --- |             --- |
+| I/O            |     0.039 |       23 |       106 |           21.70 |
+| Static Power   |     0.062 |          |           |                 |
+| Total          |     0.103 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,16 +71,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       0.950 |     1.042 |       0.961 |      0.080 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     1.069 |       1.045 |      0.024 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccint    |       0.950 |     0.008 |       0.002 |      0.006 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.011 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.012 |       0.011 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     6.047 |       6.046 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       0.950 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram   |       0.950 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
@@ -123,9 +124,11 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------+--------+-----------------+
-| Clock | Domain | Constraint (ns) |
-+-------+--------+-----------------+
++-------------+--------+-----------------+
+| Clock       | Domain | Constraint (ns) |
++-------------+--------+-----------------+
+| sys_clk_pin | clk    |            10.0 |
++-------------+--------+-----------------+
 
 
 3. Detailed Reports
@@ -137,34 +140,7 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| weddinglight_3 |    13.676 |
-|   UUT          |     0.481 |
-|     ff0        |     0.017 |
-|     ff1        |     0.020 |
-|     ff10       |     0.020 |
-|     ff11       |     0.017 |
-|     ff12       |     0.020 |
-|     ff13       |     0.021 |
-|     ff14       |     0.020 |
-|     ff15       |     0.020 |
-|     ff16       |     0.021 |
-|     ff17       |     0.020 |
-|     ff18       |     0.021 |
-|     ff19       |     0.020 |
-|     ff2        |     0.017 |
-|     ff20       |     0.020 |
-|     ff21       |     0.017 |
-|     ff22       |     0.020 |
-|     ff23       |     0.017 |
-|     ff24       |     0.020 |
-|     ff25       |     0.011 |
-|     ff3        |     0.017 |
-|     ff4        |     0.020 |
-|     ff5        |     0.018 |
-|     ff6        |     0.017 |
-|     ff7        |     0.017 |
-|     ff8        |     0.017 |
-|     ff9        |     0.017 |
+| weddinglight_3 |     0.041 |
 +----------------+-----------+
 
 

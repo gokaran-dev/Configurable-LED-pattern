@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 12 23:50:16 2025
+# Process ID: 9452
+# Current directory: D:/Mtech/Vivado/Configurable Pattern Light
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11816 D:\Mtech\Vivado\Configurable Pattern Light\Configurable Pattern Light.xpr
+# Log file: D:/Mtech/Vivado/Configurable Pattern Light/vivado.log
+# Journal file: D:/Mtech/Vivado/Configurable Pattern Light\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Mtech/Vivado/Configurable Pattern Light/Configurable Pattern Light.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

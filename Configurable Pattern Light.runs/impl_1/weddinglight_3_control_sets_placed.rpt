@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Mar 13 00:03:58 2025
+| Date         : Thu Mar 13 16:33:37 2025
 | Host         : DESKTOP-IJF0GJG running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file weddinglight_3_control_sets_placed.rpt
 | Design       : weddinglight_3
@@ -60,7 +60,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              26 |           26 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              32 |           10 |
+| No           | Yes                   | No                     |              32 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               6 |            2 |
@@ -74,33 +74,33 @@ Table of Contents
 |      Clock Signal     |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +-----------------------+-----------------------+------------------+------------------+----------------+--------------+
 |  UUT/ff19/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff10/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff1/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff2/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff10/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff0/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff21/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff1/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff23/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff22/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff21/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff24/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff20/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff22/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff11/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff5/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff8/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff3/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff11/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff6/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff4/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff7/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff5/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff14/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff16/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff12/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff13/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
-|  UUT/ff15/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff9/FDRE_inst_0  |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff16/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff13/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff12/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff14/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
+|  UUT/ff15/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff17/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff18/FDRE_inst_0 |                       |                  |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG        |                       |                  |                1 |              1 |         1.00 |
 |  UUT/ff25/CLK_BUFG    | load_count[2]_i_1_n_0 | rst_IBUF         |                2 |              6 |         3.00 |
-|  UUT/ff25/CLK_BUFG    |                       | rst_IBUF         |               10 |             32 |         3.20 |
+|  UUT/ff25/CLK_BUFG    |                       | rst_IBUF         |                7 |             32 |         4.57 |
 +-----------------------+-----------------------+------------------+------------------+----------------+--------------+
 
 

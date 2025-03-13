@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1741804407">
+<GenRun Id="impl_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1741863791">
   <File Type="BITSTR-BMM" Name="weddinglight_3_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="weddinglight_3_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="weddinglight_3_timing_summary_init.rpt"/>
@@ -106,6 +106,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
