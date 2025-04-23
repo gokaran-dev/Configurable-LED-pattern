@@ -36,12 +36,6 @@ This project implements a configurable LED pattern display on the Basys 3 FPGA b
 
 ---
 
-## Output Waveform
-
-![Waveform](results/led_pattern.output.png)
-
----
-
 ## Output Verification
 
 - The circuit was simulated in **Vivado**, and waveforms were analyzed.
